@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  /* background-color: yellow; */
+  /* height: 300px; */
+}
+
+.container .row .thumb-pic {
+  height: 300px;
+}
+
+.container .row .thumb-pic img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .row .thumb-content {
+  color: white;
+  /* background-color: blueviolet; */
+}
+
+.container .row .thumb-content .title {
+  margin-bottom: 30px;
+}
+
+.container .row .thumb-content .detail .imdb,
+.container .row .thumb-content .detail .duration {
+  display: flex;
+  line-height: 31px;
+}
+
+.container .row .thumb-content .detail .imdb .imdb-icon {
+  color: #e6ba36;
+  margin-right: 5px;
+  background-color: inherit;
+}
+
+.container .row .thumb-content .detail .duration .clock-icon {
+  color: white;
+  margin-right: 5px;
+}
+
+.container .row .thumb-content .detail .row .watch-trailer {
+  padding: 0.8rem 0.5rem;
+  background-color: coral;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+
+.container .row .thumb-content .detail #trailer {
+  margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+  .container .row .thumb-content .title {
+    margin-bottom: 5px;
+  }
+  .container .row .thumb-content .detail #trailer {
+    margin-top: 5px;
+  }
+}

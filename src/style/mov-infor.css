@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-.container {
-  /* background-color: yellow; */
-  /* height: 300px; */
-}
-
 .container .row .thumb-pic {
   height: 300px;
 }
@@ -45,16 +40,22 @@
 }
 
 .container .row .thumb-content .detail .row .watch-trailer {
-  padding: 0.8rem 0.5rem;
-  background-color: coral;
-  border-radius: 5px;
+  padding: 0.7rem 0.8rem;
+  border: 2px solid #cca943;
+  border-radius: 10px;
   color: white;
+  text-decoration: none;
   font-size: 1rem;
+}
+
+.container .row .thumb-content .detail .row .watch-trailer:hover {
+  background-color: #cca943;
 }
 
 .container .row .thumb-content .detail #trailer {
   margin-top: 60px;
 }
+
 
 @media (max-width: 767px) {
   .container .row .thumb-content .title {

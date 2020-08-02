@@ -7,6 +7,7 @@ import Bill from './components/bill'
 import Seats from './components/seats'
 import Screen from './components/screen'
 import Annotation from './components/annotation'
+import Foods from './components/foods'
 
 function App() {
   let seatsSold = {
@@ -63,6 +64,9 @@ function App() {
             <Seats seatsSold={seatsSold} sendDataSeatAndBill={sendDataSeatAndBill} />
           </div>
         </div>
+      </div>
+      <div className="container mt-4">
+        <Foods />
       </div>
     </div>
   );

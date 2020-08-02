@@ -51,7 +51,7 @@ function Bill(props) {
       <div className="bill-price mt-5 mb-5">
         <div className="row mb-3">
           <div className="col-6 col-sm-6 col-md-5 col-lg-4 col-xl-4">
-            Ticket Price
+            Ticket
           </div>
           <div className="col-6 col-sm-6 col-md-7 col-lg-8 col-xl-8" id="ticket-price">
             {formatMoney(props.priceTicket)} VND

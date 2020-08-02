@@ -1,7 +1,5 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 .App {
@@ -11,4 +9,10 @@
 .App .header {
   height: 150px;
   background-color: aqua;
+}
+
+.App .main-time-loca {
+  margin: 0;
+  padding: 0;
+  background-color: #053763;
 }

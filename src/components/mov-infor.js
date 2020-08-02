@@ -26,7 +26,7 @@ function MovInfor() {
               </div>
 
               <div className="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-2 duration">
-                <i class="fa fa-clock-o fa-2x clock-icon" aria-hidden="true"></i>
+                <i className="fa fa-clock-o fa-2x clock-icon" aria-hidden="true"></i>
                 <p>2h 30min</p>
               </div>
             </div>

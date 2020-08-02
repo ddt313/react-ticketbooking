@@ -5,17 +5,18 @@
 }
 
 .time-location {
-  height: 70px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .container .time-location .select-date,
 .container .time-location .select-time,
 .container .time-location .select-cinema {
-  height: 100%;
-  padding-top: 23px;
+  /* height: 100%; */
+  /* padding-top: 23px;
+  padding-bottom: 23px; */
   text-align: center;
-  border: 1px solid red;
+  /* border: 1px solid #cca943; */
 }
 
 .container .time-location .select-date #date {
@@ -47,7 +48,7 @@
 
 .container .time-location .item-option,
 .container .time-location .select-date #date{
-  background-color: #04192e;
+  /* background-color: #04192e; */
   border: none;
   outline: none;
 }

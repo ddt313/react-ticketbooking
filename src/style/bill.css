@@ -1,0 +1,39 @@
+.bill {
+  width: 100%;
+  color: white;
+}
+
+.bill .bill-selected section .seat-selected {
+  height: 35px;
+  width: 40px;
+  background-color: #082f50;
+  color: #cca943;
+  text-align: center;
+  margin-right: 5px;
+  line-height: 35px;
+  border-radius: 5px;
+}
+
+.bill .add-food,
+.bill .buy-ticket {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #014380;
+  border-radius: 10px;
+}
+
+.bill .buy-ticket {
+  margin-top: 15px;
+  background-color: #cca943;
+}
+
+.bill .add-food:hover,
+.bill .buy-ticket:hover {
+  cursor: pointer;
+}
+
+.bill .bill-price .my-border {
+  border-bottom: 1px solid #014380;
+}

@@ -19,7 +19,8 @@
   width: 100%;
   height: 50px;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
+  color: white;
   background-color: #014380;
   border-radius: 10px;
 }

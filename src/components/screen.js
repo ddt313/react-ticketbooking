@@ -4,8 +4,8 @@ import '../style/screen.css'
 
 function Screen() {
   return(
-    <div className="screen">
-
+    <div className="screen text-uppercase">
+      screen
     </div>
   );
 }

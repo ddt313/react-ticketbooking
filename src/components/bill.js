@@ -18,7 +18,7 @@ function Bill(props) {
     }
 
     return temp;
-  }
+  }  
 
   const formatMoney = (money) => {
     var res = "";
@@ -62,7 +62,7 @@ function Bill(props) {
             Food
           </div>
           <div className="col-6 col-sm-6 col-md-7 col-lg-8 col-xl-8" id="food-price">
-            0 VND
+            {formatMoney(props.foodMoney)} VND
           </div>
         </div>
         <div className="row mb-3 pb-3 my-border">
@@ -78,13 +78,13 @@ function Bill(props) {
             Total
           </div>
           <div className="col-6 col-sm-6 col-md-7 col-lg-8 col-xl-8" id="discount">
-            {formatMoney((funcNumOfSeatsSelected() * props.priceTicket + props.foodMoney) * (1 - props.discount / 100))} VND
+            {formatMoney(Math.round((funcNumOfSeatsSelected() * props.priceTicket + props.foodMoney) * (1 - props.discount / 100) / 1000) * 1000)} VND
           </div>
         </div>
       </div>
 
-      <div className="add-food">Add Food</div>
-      <div className="buy-ticket">Buy Ticket</div>
+      <a href="#app-food" className="btn add-food" onClick={props.funcShowFood}>Add Food</a>
+      <div className="buy-ticket pt-1">Buy Ticket</div>
     </div>
   );
 }

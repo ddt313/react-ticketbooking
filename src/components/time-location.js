@@ -2,21 +2,8 @@ import React from 'react'
 
 import '../style/time-location.css'
 
-function TimeLocation() {
-  let times = [
-    "9:30 AM",
-    "1:00 PM",
-    "3:30 PM",
-    "4:30 PM",
-    "8:15 PM"
-  ];
-
-  let cinemas = [
-    "Cinema Hai Chau",
-    "Cinema Hoa Khanh",
-    "Cinema Ngu Hanh Son",
-    "Cinema Galaxy"
-  ];
+function TimeLocation(props) {
+  const {times, cinemas} = props;
 
   const listTime = times.map((time, index) => {
     return <option className="item-option" value={"time" + index} key={index}>{time}</option>

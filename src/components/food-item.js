@@ -22,6 +22,18 @@ function FoodItem(props) {
     return res;
   }
 
+  const hanleChangeFood = (e) => {
+    if (e.target.value < 0) {
+      e.target.value = 0;
+    } else {
+      props.funcHandleSelectFood({
+        id: props.id,
+        price: props.price,
+        quantity: e.target.value
+      });
+    }
+  }
+
   return (
     <div className="food-item">
       <div className="card">
@@ -32,10 +44,17 @@ function FoodItem(props) {
           <h4 className="card-title">{props.title}</h4>
           <div className="row">
             <div className="col-12">
-              <p className="card-text">Gia: {formatMoney(props.price)} VND</p>
+              <p className="card-text">Giá: {formatMoney(props.price)} VND</p>
             </div>
             <div className="col-12">
-              <input className="form-control" type="number" name="num-food" id="num-food" placeholder="So luong" />
+              <input
+                className="form-control"
+                onChange={hanleChangeFood}
+                type="number"
+                name="num-food"
+                id="num-food"
+                placeholder="Số lượng"
+              />
             </div>
           </div>
         </div>

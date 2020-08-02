@@ -12,7 +12,7 @@ function Seat(props) {
     }
   },[]);
 
-  function handlefunc() {
+  function handleSelectSeat() {
     if (props.sold == "1") {
       return;
     }
@@ -29,7 +29,7 @@ function Seat(props) {
   }
 
   return (
-    <div className={classNames} onClick={handlefunc}>
+    <div className={classNames} onClick={handleSelectSeat}>
       {props.name}
     </div>
   );

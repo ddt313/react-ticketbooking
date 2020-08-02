@@ -20,3 +20,9 @@ html {
   padding: 0;
   background-color: #053763;
 }
+
+.App .footer {
+  height: 100px;
+  margin-top: 20px;
+  background-color: aqua;
+}

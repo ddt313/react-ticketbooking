@@ -18,8 +18,9 @@ import Foods from './components/foods'
 
 function App() {
 
-  // data film
+  // data film : thông tin film lấy ra từ database
   const film = {
+    id: "film01",
     title: "Avengers Film Abdjads Xsdjf",
     thumb: thumb,
     imdb: "8.9/10",
@@ -27,7 +28,7 @@ function App() {
     trailer: "link"
   };
 
-  // data time - cinema
+  // data time - cinema: những rạp và khung giờ chiếu của film
   const times = [
     "9:30 AM",
     "1:00 PM",
@@ -43,7 +44,7 @@ function App() {
     "Cinema Galaxy"
   ];
 
-  // data seats
+  // data seats sold : những ghế đã được bán
   const seatsSold = {
     "a1": 1,
     "a2": 1,
@@ -52,10 +53,7 @@ function App() {
   };
   const [seatsSelected, setSeatsSelected] = useState({});
 
-  // data food
-  const [foodSelected, setFoodSelected] = useState([]);
-  const [showFood, setShowFood] = useState("d-none");
-  const [foodMoney, setFoodMoney] = useState(0);
+  // data food - drink: 
   const foods = [
     {
       id: "food-01",
@@ -89,10 +87,14 @@ function App() {
     }
   ];
 
-  // data khac cua Bill
+  // data khác của Bill
   const priceTicket = 70000;
   const discount = 10;
 
+  // biến sử dụng trong ứng dụng
+  const [foodSelected, setFoodSelected] = useState([]);
+  const [showFood, setShowFood] = useState("d-none");
+  const [foodMoney, setFoodMoney] = useState(0);
 
   useEffect(() => {
     calcFoodMoney();
@@ -158,10 +160,10 @@ function App() {
     setFoodMoney(moneyFoodTemp);
   }
 
+  // hàm Render
   return (
     <div className="App">
-      <header className="header">
-      </header>
+      <header className="header">header</header>
       <MovInfor film={film} />
       <div className="row mb-5 main-time-loca">
         <TimeLocation times={times} cinemas={cinemas} />
@@ -200,6 +202,8 @@ function App() {
           funcHandleSelectFood={funcHandleSelectFood}
         />
       </div>
+
+      <div className="footer">footer</div>
     </div>
   );
 }

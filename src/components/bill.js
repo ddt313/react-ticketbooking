@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import '../style/bill.css'
 
-function Bill(props) {  
+function Bill(props) {
+
+  // tạo ra danh sách ghế  đã được chọn
   const funcList = () => {
     let list = [];
     for (let seat in props.seatsSelected) {
@@ -11,6 +13,7 @@ function Bill(props) {
     return list;
   }
 
+  // số lượng ghế được chọn
   const funcNumOfSeatsSelected = () => {
     let temp = 0;
     for (let seat in props.seatsSelected) {
@@ -20,6 +23,7 @@ function Bill(props) {
     return temp;
   }  
 
+  // format thành dạng money
   const formatMoney = (money) => {
     var res = "";
     var moneyString = money.toString();

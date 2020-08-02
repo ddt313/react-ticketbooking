@@ -22,6 +22,7 @@ function FoodItem(props) {
     return res;
   }
 
+  // hàm xử lý khi chọn food - drink
   const hanleChangeFood = (e) => {
     if (e.target.value < 0) {
       e.target.value = 0;

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import '../style/seat.css'
 
 function Seat(props) {
-  const [classNames, setClassNames] = useState("seat text-uppercase");
+  const [classNames, setClassNames] = useState("seat text-uppercase my-text");
   const [checkSelected, setCheckSelected] = useState(false);
   
   useEffect(() => {
@@ -20,7 +20,7 @@ function Seat(props) {
     if (!checkSelected) {
       setClassNames(classNames + " selected");
     } else {
-      setClassNames("seat text-uppercase");
+      setClassNames("seat text-uppercase my-text");
     }
 
     props.sendDataSeatAndBill(props.name);

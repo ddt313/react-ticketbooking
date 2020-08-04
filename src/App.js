@@ -170,7 +170,7 @@ function App() {
       </div>
       <div className="container">
         <div className="row">
-          <div className="order-col-2 order-sm-2 order-md-2 order-lg-1 order-xl-1 col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mx-auto">
+          <div className="order-2 order-sm-2 order-md-2 order-lg-1 order-xl-1 col-8 col-sm-8 col-md-8 col-lg-4 col-xl-4 mx-auto">
             <Bill
               seatsSelected={seatsSelected}
               priceTicket={priceTicket}
@@ -180,7 +180,7 @@ function App() {
               funcShowFood={funcShowFood}
             />
           </div>
-          <div className="order-col-1 order-sm-1 order-md-1 order-lg-2 order-xl-2 col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+          <div className="order-1 order-sm-1 order-md-1 order-lg-2 order-xl-2 col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
             <div className="row justify-content-end">
               <div className="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
                 <Annotation />

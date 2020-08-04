@@ -26,3 +26,27 @@
   cursor: not-allowed;
   background-color: #5b5e61;
 }
+
+.my-text {
+  font-size: .8rem;  
+}
+
+@media (min-width: 320px) {
+  .my-text { font-size: .6rem; }
+}
+
+@media (min-width: 576px) {
+  .my-text { font-size: .8rem; }
+}
+
+@media (min-width: 768px) {
+  .my-text { font-size: .9rem; }
+}
+
+@media (min-width: 992px) {
+  .my-text { font-size: .8rem; }
+}
+
+@media (min-width: 1200px) {
+  .my-text { font-size: 1rem; }
+}
